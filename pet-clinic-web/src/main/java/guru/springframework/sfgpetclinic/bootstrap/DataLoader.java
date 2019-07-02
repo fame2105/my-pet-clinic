@@ -36,7 +36,7 @@ public class DataLoader implements CommandLineRunner {
     public void run(String... args) throws Exception {
         int count = petTypeService.findAll().size();
         if(count > 0){
-            loadData();;    
+            loadData();
         }
         
     }
