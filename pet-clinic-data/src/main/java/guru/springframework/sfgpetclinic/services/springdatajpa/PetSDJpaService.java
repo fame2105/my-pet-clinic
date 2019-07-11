@@ -3,6 +3,7 @@ package guru.springframework.sfgpetclinic.services.springdatajpa;
 import java.util.HashSet;
 import java.util.Set;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import guru.springframework.sfgpetclinic.model.Pet;
@@ -10,6 +11,7 @@ import guru.springframework.sfgpetclinic.repositories.PetRepository;
 import guru.springframework.sfgpetclinic.services.PetService;
 
 @Service
+@Profile("springdatajpa")
 public class PetSDJpaService implements PetService {
 
 	private final PetRepository petRepository;
